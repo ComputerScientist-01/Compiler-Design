@@ -5,52 +5,50 @@
     
 </p>
 
-<h2 align="center"> Insert Project Title Here </h2>
-<h4 align="center"> Insert Project Description Here <h4>
+<h2 align="center">Compiler Design</h2>
 
-## Demo - [Link](link)
+All of my labwork done as part of Compiler Design (18CSC304J) lab.
 
-## :fire: Features
+| Week Number | Programming Paradigm |Set Number|
+|:------------:|:--------------------:|:--:|
+| `1` |  | |  
+| `2` |  | | 
+| `3` |  | |
+| `4` |  | |
+| `5` |  | |
+| `6` |  | |
+| `7` |  | |
+| `8` |  |  |
 
-- point 1
-- point 2
-- point 3
-- point 4
 
-## :bulb: Built Using
 
-- [**a**]()
-- [**b**]()
-- [**c**]()
+## :bulb: Languages used
 
-## :iphone: Screenshots
+- C++
 
-|                                   |                                   |
-| --------------------------------- | --------------------------------- |
-| <img src="images/"  width="300"/> | <img src="images/"  width="300"/> |
-| <img src="images/" width="300"/>  | <img src="images/" width="300"/>  |
-| <img src="images/" width="300"/>  | <img src="images/" width="300"/>  |
-| <img src="images/" width="300"/>  | <img src="images/" width="300"/>  |
-| <img src="images/" width="300"/>  | <img src="images/" width="300"/>  |
+<br>
+<p align="center"><img src="https://img.shields.io/badge/Contributors-black?logo=github&style=for-the-badge" />
+<p>
+  <a href="https://github.com/ComputerScientist-01/Compiler-Design/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=ComputerScientist-01/Compiler-Design" />
+  </a>
+</p>
+
+---
 
 ## Instructions to run
 
-- Pre-requisites:
+- directions to install 
 
-  - < insert pre-requisite >
-  - < insert pre-requisite >
-
-- < directions to install >
-
+- directions to execute
+for windows users-
 ```bash
-< insert code >
+```
+for linux users-
+```bash
 ```
 
-- < directions to execute >
-
-```bash
-< insert code >
-```
+---
 
 <!-- LICENSE -->  
 
