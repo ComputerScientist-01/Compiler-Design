@@ -1,52 +1,69 @@
-#include<iostream>
+#include <iostream>
 #include <fstream>
 using namespace std;
 int main()
 {
     int choice;
-    cout<<"Enter Your Choice:\n1-Create a new File\n2-Read File\n3-Write File\n4-Close File.\n";
-     fstream new_file,new_file2;
-     ifstream new_file;
-    bool flag=true;
-    while (flag){
-    cin>>choice;
+    cout << "Enter Your Choice:\n1-Create a new File\n2-Read File\n3-Write File\n4-Close File.\n";
+    fstream file;
+    string contents = "";
 
-    switch (choice) {
-case 1:
-    new_file.open("new_file.txt",ios::out);
-    if(!new_file)
+    bool flag = true;
+    while (flag)
     {
-    cout<<"File creation failed\n";
-    }
-    else
-    {
-    cout<<"New file created\n";
-    }
-      break;
+        cin >> choice;
 
-case 2:
-    new_file.open("new_file.txt",ios::out);
-    char s[100];
-    cout<<
-        //Writing to file
-    cout<<"New file writing successful\n";
-    break;
+        switch (choice)
+        {
+        case 1:
+            file.open("test.txt", ios::out);
+            if (!file)
+            {
+                cout << "Error in creating file!!\n";
+                break;
+            }
+            cout << "File created successfully!!\n";
+            file.close();
+            cout << "\n";
+            break;
 
-case 3:
-    new_file.open("new_file.txt",ios::in);
-    char ch; while (!new_file.eof())
-     {
-         new_file >>ch;
-         cout << ch;
-    }
-    break;
+        case 2:
+            file.open("test.txt");
+            char ch;
+            if (!file)
+            {
+                cout << "Error: File could not be opened!!\n";
+                break;
+            }
+            cout << "Contents of file are as follows: "
+                 << "\n";
+            file >> ch;
+            while (!file.eof())
+            {
+                cout << ch;
+                file >> ch;
+            }
+            file.close();
+            cout << "\n\n";
+            break;
 
-case 4:
-    new_file.open("new_file.txt",ios::out);
-    new_file.close();
-    break;
-    }
+        case 3:
+            contents = "My name is Jayvardhan Rathi!!\n";
+            file.open("test.txt");
+            file << contents;
+            file.close();
 
+            break;
+
+        case 4:
+            int status = remove("test.txt");
+            if (status == 0)
+                cout << "File Deleted Successfully!!\n";
+            else
+                cout << "Error Occurred! File could not be deleted!!\n";
+
+            break;
+        }
     }
-return 0;
+    return 0;
 }
