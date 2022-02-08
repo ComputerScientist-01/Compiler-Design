@@ -4,10 +4,10 @@ re += " "
 i = 0
 j = 1
 N = len(re)
-while(i<N):
+while (i<N):
     if re[i] == 'a':
         try:
-            if re[i+1] != '|' and re[i+1] !='*':
+            if re[i + 1] not in ['|', '*']:
                 transition_table[j][0] = j+1
                 j += 1
             elif re[i+1] == '|' and re[i+2] =='b':
@@ -21,7 +21,7 @@ while(i<N):
                 j+=1
                 transition_table[j][2]=j+1
                 j+=1
-                i=i+2
+                i += 2
             elif re[i+1]=='*':
                 transition_table[j][2]=((j+1)*10)+(j+3)
                 j+=1
@@ -33,7 +33,7 @@ while(i<N):
             transition_table[j][0] = j+1
     elif re[i] == 'b':
         try:
-            if re[i+1] != '|' and re[i+1] !='*':
+            if re[i + 1] not in ['|', '*']:
                 transition_table[j][1] = j+1
                 j += 1
             elif re[i+1]=='|' and re[i+2]=='a':
@@ -47,7 +47,7 @@ while(i<N):
                 j+=1
                 transition_table[j][2]=j+1
                 j+=1
-                i=i+2
+                i += 2
             elif re[i+1]=='*':
                 transition_table[j][2]=((j+1)*10)+(j+3)
                 j+=1
