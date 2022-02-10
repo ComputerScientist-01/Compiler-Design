@@ -9,16 +9,16 @@
 
 All of my labwork done as part of Compiler Design (18CSC304J) lab.
 
-| Week Number | Programming Paradigm |Set Number|
-|:------------:|:--------------------:|:--:|
-| `1` |  | |  
-| `2` |  | | 
-| `3` |  | |
-| `4` |  | |
-| `5` |  | |
-| `6` |  | |
-| `7` |  | |
-| `8` |  |  |
+| Week Number | Programming Paradigm |
+|:------------:|:--------------------:|
+| `1` |  |  
+| `2` |  | 
+| `3` | Regular Expression to NFA | 
+| `4` | NFA to DFA | 
+| `5` |  | 
+| `6` |  | 
+| `7` |  | 
+| `8` |  |  
 
 
 
