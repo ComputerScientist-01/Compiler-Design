@@ -15,7 +15,8 @@ All of my labwork done as part of Compiler Design (18CSC304J) lab.
 | `2` |  | 
 | `3` | Regular Expression to NFA | 
 | `4` | NFA to DFA | 
-| `5` |  | 
+| `5a` | Elimination of Left recursion |
+| `5b` |  Left factoring|   
 | `6` |  | 
 | `7` |  | 
 | `8` |  |  
