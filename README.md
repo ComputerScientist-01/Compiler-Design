@@ -11,7 +11,7 @@ All of my labwork done as part of Compiler Design (18CSC304J) lab.
 
 | Week Number | Programming Paradigm |
 |:------------:|:--------------------:|
-| `1` |  |  
+| `1` | File Handling |  
 | `2` |  | 
 | `3` | Regular Expression to NFA | 
 | `4` | NFA to DFA | 
