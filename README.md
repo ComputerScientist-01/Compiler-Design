@@ -26,6 +26,7 @@ All of my labwork done as part of Compiler Design (18CSC304J) lab.
 ## :bulb: Languages used
 
 - C++
+- Python
 
 <br>
 <p align="center"><img src="https://img.shields.io/badge/Contributors-black?logo=github&style=for-the-badge" />
