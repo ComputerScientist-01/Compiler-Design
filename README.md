@@ -17,7 +17,7 @@ All of my labwork done as part of Compiler Design (18CSC304J) lab.
 | `4` | NFA to DFA | 
 | `5a` | Elimination of Left recursion |
 | `5b` |  Left factoring|   
-| `6` |  | 
+| `6` | First() and Follow() | 
 | `7` |  | 
 | `8` |  |  
 
