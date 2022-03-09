@@ -14,7 +14,7 @@ def first(string):
     elif string in terminals:
         first_ = {string}
 
-    elif string=='' or string=='@':
+    elif string in ['', '@']:
         first_ = {'@'}
 
     else:
@@ -77,31 +77,18 @@ def follow(nT):
 
 no_of_terminals=int(input("Enter no. of terminals: "))
 
-terminals = []
-
 print("Enter the terminals :")
-for _ in range(no_of_terminals):
-    terminals.append(input())
-
+terminals = [input() for _ in range(no_of_terminals)]
 no_of_non_terminals=int(input("Enter no. of non terminals: "))
 
-non_terminals = []
-
 print("Enter the non terminals :")
-for _ in range(no_of_non_terminals):
-    non_terminals.append(input())
-
+non_terminals = [input() for _ in range(no_of_non_terminals)]
 starting_symbol = input("Enter the starting symbol: ")
 
 no_of_productions = int(input("Enter no of productions: "))
 
-productions = []
-
 print("Enter the productions:")
-for _ in range(no_of_productions):
-    productions.append(input())
-
-
+productions = [input() for _ in range(no_of_productions)]
 #print("terminals", terminals)
 
 #print("non terminals", non_terminals)
@@ -109,11 +96,7 @@ for _ in range(no_of_productions):
 #print("productions",productions)
 
 
-productions_dict = {}
-
-for nT in non_terminals:
-    productions_dict[nT] = []
-
+productions_dict = {nT: [] for nT in non_terminals}
 
 #print("productions_dict",productions_dict)
 
@@ -123,21 +106,8 @@ for production in productions:
     for alternative in alternatives:
         productions_dict[nonterm_to_prod[0]].append(alternative)
 
-#print("productions_dict",productions_dict)
-
-#print("nonterm_to_prod",nonterm_to_prod)
-#print("alternatives",alternatives)
-
-
-FIRST = {}
-FOLLOW = {}
-
-for non_terminal in non_terminals:
-    FIRST[non_terminal] = set()
-
-for non_terminal in non_terminals:
-    FOLLOW[non_terminal] = set()
-
+FIRST = {non_terminal: set() for non_terminal in non_terminals}
+FOLLOW = {non_terminal: set() for non_terminal in non_terminals}
 #print("FIRST",FIRST)
 
 for non_terminal in non_terminals:
