@@ -42,12 +42,14 @@ All of my labwork done as part of Compiler Design (18CSC304J) lab.
 
 - directions to install 
 
-- directions to execute
+- directions to execute python code
 for windows users-
 ```bash
+python app.py
 ```
 for linux users-
 ```bash
+python3 app.py
 ```
 
 ---
