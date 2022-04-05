@@ -18,9 +18,11 @@ All of my labwork done as part of Compiler Design (18CSC304J) lab.
 | `5a` | Elimination of Left recursion |
 | `5b` |  Left factoring|   
 | `6` | First() and Follow() | 
-| `7` |  | 
-| `8` |  |  
-
+| `7` | Leading & Trail | 
+| `8` | Predictive Parsing |  
+| `9` | Shift Reduce | 
+| `10` | LR(0) | 
+| `11` | Three address code | 
 
 
 ## :bulb: Languages used
